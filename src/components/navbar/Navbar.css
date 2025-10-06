@@ -4,43 +4,50 @@
   align-items: center;
 }
 
-#title-container, #nav-links-container {
+#title-container,
+#nav-links-container {
   margin: 5px;
   padding: 10px;
 }
 
 #title-container {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 #nav-links-container {
+  display: flex;
 }
 
 .nav-links {
-    list-style: none;
-    display: flex;
-    /* justify-content: center; */
-    padding: 3px;
-    gap: 40px;
-    font-size: larger;
-
+  list-style: none;
+  display: flex;
+  /* justify-content: center; */
+  padding: 3px;
+  gap: 40px;
+  font-size: larger;
 }
 
 .nav-links > li > a {
-    text-decoration: none;
-    /* color: black; */
-    color: #988c7f;
-
+  text-decoration: none;
+  /* color: black; */
+  color: #988c7f;
 }
 
-
 .title-header {
-  color: #A39171;
-
+  color: #a39171;
 }
 
 .nav-links > li > a:hover {
-    color: black;
-    text-decoration: underline;
+  color: black;
+  text-decoration: underline;
 }
 
+#logout-btn {
+  background-color: transparent;
+  /* border: 2px solid ; */
+  font-size: 15px;
+}
+
+#login-btn:hover {
+  background-color: #a39171;
+}
