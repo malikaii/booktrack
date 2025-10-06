@@ -1,26 +1,55 @@
 import React, { useState } from "react";
 import "./LandingPage.css";
 import { useNavigate } from "react-router-dom";
+import ErrorField from "../../components/error/ErrorField";
 
 function LandingPage() {
-
   const [credentials, setCredentials] = useState({
-    username: '',
-    password: ''
-  })
+    username: "",
+    password: "",
+  });
 
-  // const navigate = useNavigate();
+  const [error, setError] = useState("");
+
+  const navigate = useNavigate();
 
   function onChangeValue(event) {
-    const {name, value} = event.target    
-    setCredentials(prevValue => ({...prevValue, [name]: value}))
+    setError("")
+    const { name, value } = event.target;
+    setCredentials((prevValue) => ({ ...prevValue, [name]: value }));
   }
 
-  function handleSubmit() {
-    console.log(credentials);
-    
-    // navigate("/explore")
-    
+  async function handleSubmit() {
+    const { username, password } = credentials;
+
+
+    try {
+
+      if(!username || !password) {
+        throw new Error("Enter all fields!")
+      }
+      const res = await fetch(
+        `http://localhost:3001/users?username=${username}`
+      );
+      const data = await res.json();
+
+      if (data.length === 0) throw new Error("User not found!");
+
+      const user = data[0];
+
+      if (user.password !== password) {
+        throw new Error("Invalid password");
+      }
+    } catch (error) {
+      setError(error.message);
+    }
+
+    setCredentials({
+      username: "",
+      password: "",
+    });
+
+    // navigate("/explore");
   }
 
   return (
@@ -52,7 +81,10 @@ function LandingPage() {
                 placeholder="Password"
               />
             </div>
-            <button onClick={handleSubmit} id="login-btn">Enter</button>
+            <button onClick={handleSubmit} id="login-btn">
+              Enter
+            </button>
+            {error && <ErrorField errorMessage={error}/>}
           </div>
         </div>
       </div>

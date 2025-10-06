@@ -1,0 +1,11 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "username": "joeJohn",
+            "password": "pass",
+            "createdAt": "2025-10-06T12:00:00Z",
+            "lastLogin": "2025-10-06T13:00:00Z"
+        }
+    ]
+}
