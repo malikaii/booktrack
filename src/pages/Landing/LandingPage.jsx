@@ -2,8 +2,11 @@ import React, { useState } from "react";
 import "./LandingPage.css";
 import { useNavigate } from "react-router-dom";
 import ErrorField from "../../components/error/ErrorField";
+import { useAuth } from "../../Auth/AuthContext.jsx";
 
 function LandingPage() {
+  const { login } = useAuth();
+
   const [credentials, setCredentials] = useState({
     username: "",
     password: "",
@@ -14,7 +17,7 @@ function LandingPage() {
   const navigate = useNavigate();
 
   function onChangeValue(event) {
-    setError("")
+    setError("");
     const { name, value } = event.target;
     setCredentials((prevValue) => ({ ...prevValue, [name]: value }));
   }
@@ -22,24 +25,25 @@ function LandingPage() {
   async function handleSubmit() {
     const { username, password } = credentials;
 
-
     try {
-
-      if(!username || !password) {
-        throw new Error("Enter all fields!")
+      if (!username || !password) {
+        throw new Error("Enter all fields!");
       }
       const res = await fetch(
         `http://localhost:3001/users?username=${username}`
       );
       const data = await res.json();
 
-      if (data.length === 0) throw new Error("User not found!");
+      if (data.length === 0)
+        throw new Error("Username does not exist. Try again");
 
       const user = data[0];
 
       if (user.password !== password) {
         throw new Error("Invalid password");
       }
+
+      login(user);
     } catch (error) {
       setError(error.message);
     }
@@ -48,8 +52,6 @@ function LandingPage() {
       username: "",
       password: "",
     });
-
-    // navigate("/explore");
   }
 
   return (
@@ -84,7 +86,7 @@ function LandingPage() {
             <button onClick={handleSubmit} id="login-btn">
               Enter
             </button>
-            {error && <ErrorField errorMessage={error}/>}
+            {error && <ErrorField errorMessage={error} />}
           </div>
         </div>
       </div>
