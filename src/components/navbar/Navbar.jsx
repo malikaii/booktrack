@@ -8,7 +8,7 @@ function Navbar() {
 
   return (
     <>
-      {user && location.pathname!=="/"? (
+      {user && location.pathname !== "/" ? (
         <div className="nav-container">
           <div id="title-container">
             <h1 className="title-header">Book Tracker</h1>
@@ -23,6 +23,9 @@ function Navbar() {
               </li>
               <li>
                 <Link to="/create">Create</Link>
+              </li>
+              <li>
+                <Link to="/titles">Titles</Link>
               </li>
               <li>
                 <Link to="/contact">Contact</Link>

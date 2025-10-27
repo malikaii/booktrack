@@ -1,11 +1,14 @@
 import React from "react";
 import "./ErrorField.css";
+import { FaExclamationCircle } from "react-icons/fa";
 
 function ErrorField({ errorMessage }) {
   return (
     <>
       <div id="error-field">
-        <h5>{errorMessage}</h5>
+        <p>
+          <FaExclamationCircle /> {errorMessage}
+        </p>
       </div>
     </>
   );
