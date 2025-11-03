@@ -6,6 +6,8 @@ import { AuthProvider } from "./Auth/AuthContext.jsx";
 import ProtectedRoute from "./Auth/ProtectedRoute.jsx";
 import TitlesPage from "./pages/Titles/TitlesPage.jsx";
 import Details from "./pages/Titles/Details.jsx";
+import CreatePage from "./pages/Create/CreatePage.jsx";
+import EntryPage from "./pages/Create/EntryPage.jsx";
 
 function App() {
   return (
@@ -22,19 +24,27 @@ function App() {
               </ProtectedRoute>
             }
           />
-          <Route
+          {/* <Route
             path="/explore"
             element={
               <ProtectedRoute>
                 <h1>Explore Page</h1>
               </ProtectedRoute>
             }
-          />
+          /> */}
           <Route
             path="/create"
             element={
               <ProtectedRoute>
-                <h1>Create Page</h1>
+                <CreatePage />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/entry/new"
+            element={
+              <ProtectedRoute>
+                <EntryPage />
               </ProtectedRoute>
             }
           />

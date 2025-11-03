@@ -15,9 +15,9 @@ function Navbar() {
           </div>
           <div id="nav-links-container">
             <ul className="nav-links">
-              <li>
+              {/* <li>
                 <Link to="/explore">Explore</Link>
-              </li>
+              </li> */}
               <li>
                 <Link to="/profile">Profile</Link>
               </li>

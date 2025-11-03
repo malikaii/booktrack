@@ -1,103 +1,157 @@
 {
-    "users": [
-        {
-            "id": 1,
-            "username": "joeJohn",
-            "password": "pass",
-            "createdAt": "2025-10-06T12:00:00Z",
-            "lastLogin": "2025-10-06T13:00:00Z"
-        }
-    ],
-    "titles": [
-        {
-            "id": 1,
-            "bookTitle": "Old man and the sea",
-            "description": "",
-            "author": "Ernest Hemingway",
-            "publishDateYear": 1946,
-            "pageNumber": 345,
-            "thumbnailSrc": "https://i5.walmartimages.com/seo/The-Old-Man-and-the-Sea-Paperback-9789393724625_cf04813b-7507-4b65-95df-2044d93b40a7.83eeac3992e8d083cca893529467b7fb.jpeg"
-        },
-        {
-            "id": 2,
-            "bookTitle": "Eragon",
-            "description": "",
-            "author": "Christoper Paolini",
-            "publishDateYear": 1996,
-            "pageNumber": 400,
-            "thumbnailSrc": "https://upload.wikimedia.org/wikipedia/en/c/ce/Eragon_book_cover.png"
-        },
-        {
-            "id": 3,
-            "bookTitle": "Harry Potter: Philosopher's Stone",
-            "description": "",
-            "author": "J.K. Rowling",
-            "publishDateYear": 1991,
-            "pageNumber": 345,
-            "thumbnailSrc": "https://m.media-amazon.com/images/I/81DI+BAN2SL._UF1000,1000_QL80_.jpg"
-        },
-        {
-            "id": 4,
-            "bookTitle": "Twilight",
-            "description": "",
-            "author": "Stephenie Meyer",
-            "publishDateYear": 1946,
-            "pageNumber": 345,
-            "thumbnailSrc": "https://i5.walmartimages.com/seo/Twilight-Saga-Twilight-Book-1-Hardcover-9780316160179_4a3210d0-b277-4431-837f-84de1d18d70f.02e3e81c9bcf12aeba4927cfdf23fa77.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF"
-        },
-        {
-            "id": 5,
-            "bookTitle": "Lord of the Rings: The Fellowship of the Ring",
-            "description": "",
-            "author": "J.R.R. Tolkien",
-            "publishDateYear": 1946,
-            "pageNumber": 345,
-            "thumbnailSrc": "https://m.media-amazon.com/images/I/A1Nv8Uz0fKL._UF1000,1000_QL80_.jpg"
-        },
-                {
-            "id": 6,
-            "bookTitle": "Old man and the sea",
-            "description": "",
-            "author": "Ernest Hemingway",
-            "publishDateYear": 1946,
-            "pageNumber": 345,
-            "thumbnailSrc": "https://i5.walmartimages.com/seo/The-Old-Man-and-the-Sea-Paperback-9789393724625_cf04813b-7507-4b65-95df-2044d93b40a7.83eeac3992e8d083cca893529467b7fb.jpeg"
-        },
-        {
-            "id": 7,
-            "bookTitle": "Eragon",
-            "description": "",
-            "author": "Christoper Paolini",
-            "publishDateYear": 1996,
-            "pageNumber": 400,
-            "thumbnailSrc": "https://upload.wikimedia.org/wikipedia/en/c/ce/Eragon_book_cover.png"
-        },
-        {
-            "id": 8,
-            "bookTitle": "Harry Potter: Philosopher's Stone",
-            "description": "",
-            "author": "J.K. Rowling",
-            "publishDateYear": 1991,
-            "pageNumber": 345,
-            "thumbnailSrc": "https://m.media-amazon.com/images/I/81DI+BAN2SL._UF1000,1000_QL80_.jpg"
-        },
-        {
-            "id": 9,
-            "bookTitle": "Twilight",
-            "description": "",
-            "author": "Stephenie Meyer",
-            "publishDateYear": 1946,
-            "pageNumber": 345,
-            "thumbnailSrc": "https://i5.walmartimages.com/seo/Twilight-Saga-Twilight-Book-1-Hardcover-9780316160179_4a3210d0-b277-4431-837f-84de1d18d70f.02e3e81c9bcf12aeba4927cfdf23fa77.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF"
-        },
-        {
-            "id": 10,
-            "bookTitle": "Lord of the Rings: The Fellowship of the Ring",
-            "description": "",
-            "author": "J.R.R. Tolkien",
-            "publishDateYear": 1946,
-            "pageNumber": 345,
-            "thumbnailSrc": "https://m.media-amazon.com/images/I/A1Nv8Uz0fKL._UF1000,1000_QL80_.jpg"
-        }
-    ]
+  "users": [
+    {
+      "id": "1",
+      "username": "joeJohn",
+      "password": "pass",
+      "createdAt": "2025-10-06T12:00:00Z",
+      "lastLogin": "2025-10-06T13:00:00Z"
+    }
+  ],
+  "titles": [
+    {
+      "id": "1",
+      "bookTitle": "Old man and the sea",
+      "description": "",
+      "author": "Ernest Hemingway",
+      "publishDateYear": 1946,
+      "pageNumber": 345,
+      "thumbnailSrc": "https://i5.walmartimages.com/seo/The-Old-Man-and-the-Sea-Paperback-9789393724625_cf04813b-7507-4b65-95df-2044d93b40a7.83eeac3992e8d083cca893529467b7fb.jpeg"
+    },
+    {
+      "id": "2",
+      "bookTitle": "Eragon",
+      "description": "",
+      "author": "Christoper Paolini",
+      "publishDateYear": 1996,
+      "pageNumber": 400,
+      "thumbnailSrc": "https://upload.wikimedia.org/wikipedia/en/c/ce/Eragon_book_cover.png"
+    },
+    {
+      "id": "3",
+      "bookTitle": "Harry Potter: Philosopher's Stone",
+      "description": "",
+      "author": "J.K. Rowling",
+      "publishDateYear": 1991,
+      "pageNumber": 345,
+      "thumbnailSrc": "https://m.media-amazon.com/images/I/81DI+BAN2SL._UF1000,1000_QL80_.jpg"
+    },
+    {
+      "id": "4",
+      "bookTitle": "Twilight",
+      "description": "",
+      "author": "Stephenie Meyer",
+      "publishDateYear": 1946,
+      "pageNumber": 345,
+      "thumbnailSrc": "https://i5.walmartimages.com/seo/Twilight-Saga-Twilight-Book-1-Hardcover-9780316160179_4a3210d0-b277-4431-837f-84de1d18d70f.02e3e81c9bcf12aeba4927cfdf23fa77.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF"
+    },
+    {
+      "id": "5",
+      "bookTitle": "Lord of the Rings: The Fellowship of the Ring",
+      "description": "",
+      "author": "J.R.R. Tolkien",
+      "publishDateYear": 1946,
+      "pageNumber": 345,
+      "thumbnailSrc": "https://m.media-amazon.com/images/I/A1Nv8Uz0fKL._UF1000,1000_QL80_.jpg"
+    },
+    {
+      "id": "6",
+      "bookTitle": "Old man and the sea",
+      "description": "",
+      "author": "Ernest Hemingway",
+      "publishDateYear": 1946,
+      "pageNumber": 345,
+      "thumbnailSrc": "https://i5.walmartimages.com/seo/The-Old-Man-and-the-Sea-Paperback-9789393724625_cf04813b-7507-4b65-95df-2044d93b40a7.83eeac3992e8d083cca893529467b7fb.jpeg"
+    },
+    {
+      "id": "7",
+      "bookTitle": "Eragon",
+      "description": "",
+      "author": "Christoper Paolini",
+      "publishDateYear": 1996,
+      "pageNumber": 400,
+      "thumbnailSrc": "https://upload.wikimedia.org/wikipedia/en/c/ce/Eragon_book_cover.png"
+    },
+    {
+      "id": "8",
+      "bookTitle": "Harry Potter: Philosopher's Stone",
+      "description": "",
+      "author": "J.K. Rowling",
+      "publishDateYear": 1991,
+      "pageNumber": 345,
+      "thumbnailSrc": "https://m.media-amazon.com/images/I/81DI+BAN2SL._UF1000,1000_QL80_.jpg"
+    },
+    {
+      "id": "9",
+      "bookTitle": "Twilight",
+      "description": "",
+      "author": "Stephenie Meyer",
+      "publishDateYear": 1946,
+      "pageNumber": 345,
+      "thumbnailSrc": "https://i5.walmartimages.com/seo/Twilight-Saga-Twilight-Book-1-Hardcover-9780316160179_4a3210d0-b277-4431-837f-84de1d18d70f.02e3e81c9bcf12aeba4927cfdf23fa77.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF"
+    },
+    {
+      "id": "10",
+      "bookTitle": "Lord of the Rings: The Fellowship of the Ring",
+      "description": "",
+      "author": "J.R.R. Tolkien",
+      "publishDateYear": 1946,
+      "pageNumber": 345,
+      "thumbnailSrc": "https://m.media-amazon.com/images/I/A1Nv8Uz0fKL._UF1000,1000_QL80_.jpg"
+    },
+    {
+      "id": "f63d",
+      "bookTitle": "New title",
+      "description": "new book ",
+      "author": "mack ode",
+      "publishDateYear": "1997",
+      "pageNumber": "234",
+      "thumbnailSrc": "newsrc"
+    },
+    {
+      "id": "f3f1",
+      "bookTitle": "New title",
+      "description": "new book ",
+      "author": "mack ode",
+      "publishDateYear": "1997",
+      "pageNumber": "234",
+      "thumbnailSrc": "newsrc"
+    },
+    {
+      "id": "e31a",
+      "bookTitle": "",
+      "description": "",
+      "author": "",
+      "publishDateYear": 0,
+      "pageNumber": 0,
+      "thumbnailSrc": ""
+    }
+  ],
+  "entries": [
+    {
+      "entry": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa alias ut sit facilis. Commodi, veritatis porro ducimus praesentium sed natus, ipsa possimus veniam tempore, placeat architecto eos blanditiis. Eos, omnis.",
+      "bookTitle": "Harry Potter: Philosopher's Stone"
+    },
+    {
+      "id": "d752",
+      "bookTitle": "Eragon",
+      "entry": "this is an entry"
+    },
+    {
+      "id": "577c",
+      "bookTitle": "Old man and the sea",
+      "entry": "aewa"
+    },
+    {
+      "id": "f3b3",
+      "bookTitle": "Old man and the sea",
+      "entry": "aewa"
+    },
+    {
+      "id": "c4e3",
+      "bookTitle": "Harry Potter: Philosopher's Stone",
+      "entry": "entry1",
+      "date": "Sun Nov 02 2025"
+    }
+  ]
 }
