@@ -59,9 +59,10 @@ function TitlesPage() {
             </div>
           </section>
           <section id="titles-list">
-            {titles.map((title, i) => (
+            
+            {titles?.map((title, i) => (
               <div className="title" key={i}>
-                <img className="thumbnail" src={title.thumbnailSrc} alt={""} />
+                <img className="thumbnail" src={title.thumbnailSrc} alt={title.bookTitle} />
                 {/* <h4 className="book-title">{title.bookTitle}</h4>{" "} */}
                 <Link className="book-title" to={`/titles/${title.id}`}>{title.bookTitle}</Link>
               </div>
