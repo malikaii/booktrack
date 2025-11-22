@@ -8,6 +8,7 @@ import TitlesPage from "./pages/Titles/TitlesPage.jsx";
 import Details from "./pages/Titles/Details.jsx";
 import CreatePage from "./pages/Create/CreatePage.jsx";
 import EntryPage from "./pages/Create/EntryPage.jsx";
+import ProfilePage from "./pages/Profile/ProfilePage.jsx";
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
             path="/profile"
             element={
               <ProtectedRoute>
-                <h1>Profile Page</h1>
+                <ProfilePage />
               </ProtectedRoute>
             }
           />
@@ -64,14 +65,14 @@ function App() {
               </ProtectedRoute>
             }
           />
-          <Route
+          {/* <Route
             path="/contact"
             element={
               <ProtectedRoute>
                 <h1>Contact Page</h1>
               </ProtectedRoute>
             }
-          />
+          /> */}
         </Routes>
       </AuthProvider>
     </>

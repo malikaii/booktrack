@@ -4,6 +4,7 @@
       "id": "1",
       "username": "joeJohn",
       "password": "pass",
+      "name": "Joseph Johnson",
       "createdAt": "2025-10-06T12:00:00Z",
       "lastLogin": "2025-10-06T13:00:00Z"
     }
@@ -98,33 +99,6 @@
       "publishDateYear": 1946,
       "pageNumber": 345,
       "thumbnailSrc": "https://m.media-amazon.com/images/I/A1Nv8Uz0fKL._UF1000,1000_QL80_.jpg"
-    },
-    {
-      "id": "f63d",
-      "bookTitle": "New title",
-      "description": "new book ",
-      "author": "mack ode",
-      "publishDateYear": "1997",
-      "pageNumber": "234",
-      "thumbnailSrc": "newsrc"
-    },
-    {
-      "id": "f3f1",
-      "bookTitle": "New title",
-      "description": "new book ",
-      "author": "mack ode",
-      "publishDateYear": "1997",
-      "pageNumber": "234",
-      "thumbnailSrc": "newsrc"
-    },
-    {
-      "id": "e31a",
-      "bookTitle": "",
-      "description": "",
-      "author": "",
-      "publishDateYear": 0,
-      "pageNumber": 0,
-      "thumbnailSrc": ""
     }
   ],
   "entries": [

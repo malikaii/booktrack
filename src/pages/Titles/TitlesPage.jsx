@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useCallback, useEffect, useRef, useState } from "react";
 import "./TitlesPage.css";
 import { Link } from "react-router-dom";
 
@@ -18,18 +18,18 @@ function TitlesPage() {
     contentStyle.display = contentStyle.display === "none" ? "block" : "none";
   };
 
-  const fetchTitles = async () => {
+  const fetchTitles = useCallback(async () => {
     const res = await fetch(`${dbApiUrl}/titles`);
     const data = await res.json();
 
     setTitles(data);
  
     
-  };
+  }, [dbApiUrl]);
 
   useEffect(() => {
     fetchTitles();
-  }, []);
+  }, [fetchTitles]);
 
   return (
     <>

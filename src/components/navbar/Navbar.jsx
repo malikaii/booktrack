@@ -27,9 +27,9 @@ function Navbar() {
               <li>
                 <Link to="/titles">Titles</Link>
               </li>
-              <li>
+              {/* <li>
                 <Link to="/contact">Contact</Link>
-              </li>
+              </li> */}
               <li>
                 <button id="logout-btn" onClick={logout}>
                   Logout

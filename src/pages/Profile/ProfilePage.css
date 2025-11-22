@@ -1,0 +1,77 @@
+.profile-container {
+  margin: 25px 80px;
+  display: flex;
+  /* justify-content: center; */
+  gap: 150px;
+}
+
+#bio-section {
+  /* border: 1px solid black; */
+  padding: 3px;
+  width: 25%;
+}
+
+/* Remove margin to align top of divs */
+.title-header-t {
+  margin: 0;
+}
+
+.edit-link {
+  text-decoration: none;
+  color: blue;
+}
+
+/* Img container */
+.bio-img {
+}
+
+/* Actual img element */
+.bio-pic {
+  height: 200px;
+  width: 300px;
+}
+
+#bio-title {
+}
+
+#info-section {
+  width: 75%;
+  /* border: 1px solid black; */
+  /* padding: 5px; */
+}
+
+.info-heading {
+  height: 162px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#edit-btn {
+}
+
+.info-body {
+}
+
+h2 {
+  border-bottom: 2px solid #a39171;
+  width: fit-content;
+}
+
+h2:hover {
+  transform: scale(1.1);
+}
+
+.table-container {
+  display: table; /* Makes the div behave like a table */
+  width: 100%; /* Optional: Set width as needed */
+}
+
+.table-row {
+  display: table-row; /* Makes the div behave like a table row */
+}
+
+.table-cell {
+  display: table-cell; /* Makes the div behave like a table cell */
+  padding: 8px; /* Optional: Add padding for content spacing */
+  /* Remove any border properties here to ensure no borders */
+}
